@@ -44,4 +44,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
+# adding a simple form
+gem 'simple_form'
+#Adding Pagination
+gem 'will_paginate', '~> 3.1.0'
+#for bootstrap
+gem 'bootstrap-sass', '~> 3.3.7'

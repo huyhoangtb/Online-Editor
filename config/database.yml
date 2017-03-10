@@ -1,19 +1,19 @@
 default: &default
-adapter: postgresql
-encoding: unicode
-pool: 5
-username: username
-password: password
-host: <%= ENV['IP'] %>
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
+    username: username
+    password: password
+    host: <%= ENV['IP'] %>
 
 development:
-<<: *default 
-database: editor_development
+    <<: *default 
+    database: editor_development
 
 test:
-<<: *default
-database: editor_test
+    <<: *default
+    database: editor_test
 
 production:
-<<: *default
-database: editor_production
+    <<: *default
+    database: editor_production
