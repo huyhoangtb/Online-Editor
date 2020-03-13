@@ -9,7 +9,18 @@ Things you may want to cover:
 
 * System dependencies
 
-* Configuration
+* Configurati***How to install***
+
+1. `npm install -g bower`
+2. `brew install FreeTDS` or `sudo ARCHFLAGS=“-arch x86_64” gem install tiny_tds`
+3. `rm -fr vendor/assets/bower_components`
+4. Rename file `config/application.example.yml` to `config/application.yml`
+6. `bower install`
+7. `bundle`
+8. `rake db:setup`
+
+***To run server***: `rails server`
+***Visit site at address***: http://localhost:3602/adminjkon
 
 * Database creation
 
